@@ -1,2 +1,24 @@
-# credit-assistant
-A credit assistant that evaluates a user's creditworthiness based on the data provided.
+# Кредитный помошник
+
+Данный проект представляет собой нейросеть, для оценивания кредитоспособности пользователя на основе предоставленных данных. ИИ анализирует финансовую историю, доходы и другие показатели чтобы принять решение
+
+
+## Разработчики :
+- Жуков Тимофей (Backend)
+- Михайлов Данил (Ai)
+- Илья ()
+- Виктор (Data Base)
+
+## Технологический стек :
+- HTML
+- CSS
+- JavaScript
+- Python
+- 
+
+## Как запустить :
+- На Windows/Linux/MacOS:
+  - Запустите исполняемый файл rent_things_for_a_certain_period_of_time для своей операционной системы или  или перейдите по ссылке : rent_things_for_a_certain_period_of_time.com
+- На Android/iOS :
+  - Запустите приложение из главного экрана
+
