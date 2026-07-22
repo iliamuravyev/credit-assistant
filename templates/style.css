@@ -1,0 +1,191 @@
+/* Основной экран (Оболочка) */
+.macbook-pro {
+  overflow: hidden;
+  background: linear-gradient(
+    161deg,
+    rgba(46, 59, 72, 1) 0%,
+    rgba(57, 88, 74, 1) 28%,
+    rgba(42, 49, 74, 1) 100%
+  );
+  width: 100%;
+  min-height: 100vh; /* На всю высоту экрана */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Контейнер для центрирования контента */
+.content-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; /* Отступ между заголовком и формой */
+}
+
+/* Заголовок */
+.macbook-pro .text-wrapper-3 {
+  font-family: "Instagram Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 80px; /* Уменьшено со 128px для лучшего баланса */
+  letter-spacing: -2px;
+  white-space: nowrap;
+  text-align: center;
+  line-height: normal;
+  margin: 0;
+}
+
+/* Форма */
+.macbook-pro .frame {
+  display: flex;
+  flex-direction: column;
+  width: 613px;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px;
+}
+
+/* Логотип */
+.macbook-pro .img {
+  width: 328.27px;
+  height: 256px;
+  object-fit: contain;
+}
+
+/* Поля ввода (Контейнеры) */
+.macbook-pro .frame-2 {
+  position: relative;
+  width: 433px;
+  height: 80px;
+}
+
+/* Сами инпуты */
+.macbook-pro .rectangle-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: var(--variable-collection-corner-rad, 8px);
+  border: 2px solid #ffffff;
+  background: linear-gradient(
+    179deg,
+    rgba(43, 46, 59, 1) 0%,
+    rgba(75, 123, 113, 1) 100%
+  );
+  box-sizing: border-box;
+  appearance: none;
+  margin: 0;
+  padding: 0 20px; /* Отступ для текста внутри */
+  color: #ffffff;
+  outline: none;
+  font-size: 32px !important;
+}
+
+/* Текст-подсказка внутри инпута */
+.macbook-pro .text-wrapper {
+  position: absolute;
+  width: 94.23%;
+  height: 100%;
+  top: 0;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  font-family: "Instagram Sans-Medium", Helvetica;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 24px !important; /* Уменьшено для читаемости внутри поля */
+  letter-spacing: 0;
+  line-height: normal;
+  pointer-events: none; /* Чтобы клик проходил сквозь текст на инпут */
+}
+
+/* Ссылки снизу */
+.macbook-pro .text-wrapper-2 {
+  position: relative;
+  align-self: stretch;
+  height: 35px;
+  font-family: "Instagram Sans-Medium", Helvetica;
+  font-weight: 500;
+  color: #67a9ff;
+  font-size: 24px;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: normal;
+  text-decoration: none;
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Эффекты при фокусе
+.macbook-pro .frame-2:focus-within .rectangle-2 {
+  border-color: #67a9ff;
+  outline: 2px solid #67a9ff;
+  outline-offset: 3px;
+}
+
+.macbook-pro .text-wrapper-2:focus-visible {
+  outline: 2px solid #67a9ff;
+  outline-offset: 3px;
+} */
+
+/* Декоративные фоновые размытые круги */
+.macbook-pro .rectangle {
+  position: absolute;
+  top: 65%;
+  left: -10%;
+  width: 628px;
+  height: 628px;
+  background-color: #8bffbd;
+  border-radius: 1000px;
+  filter: blur(121.75px);
+  opacity: 0.3;
+}
+
+.macbook-pro .div {
+  position: absolute;
+  top: -10%;
+  left: 20%;
+  width: 628px;
+  height: 628px;
+  background-color: #8dff8b;
+  border-radius: 1000px;
+  filter: blur(162.45px);
+  opacity: 0.3;
+}
+
+.macbook-pro .rectangle-3 {
+  position: absolute;
+  top: 20%;
+  right: -10%;
+  width: 800px;
+  height: 800px;
+  background-color: #89d6c0;
+  border-radius: 1000px;
+  filter: blur(149.3px);
+  opacity: 0.3;
+}
+
+/* Утилитарный класс скрытия */
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
