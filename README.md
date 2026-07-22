@@ -18,8 +18,4 @@
 - Numpy
 - Tensorflow
 
-## Как запустить :
-- На Windows/Linux/MacOS:
-  - Перейдите по ссылке : 
-
 
